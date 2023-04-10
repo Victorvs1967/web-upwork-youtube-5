@@ -9,15 +9,6 @@ body
  font-size: 10px
  line-height: 1.6
 
-body
-  min-height: 100vh
-  font-size: 1.4rem
-  background-image: url("../img/port5.jpg")
-  background-repeat: no-repeat
-  background-size: cover
-  &.locked
-    overflow: hidden
-
 a
  text-decoration: none
  color: #262626
@@ -26,8 +17,16 @@ ul,
 li
  list-style: none
 
+.main__body
+ min-height: 100vh
+ font-size: 1.4rem
+
+ &.locked
+  overflow: hidden
+
 @keyframes fade
-  0%
-    opacity: 0
-  100%
-    opacity: 1
+ 0%
+  opacity: 0
+
+ 100%
+  opacity: 1
