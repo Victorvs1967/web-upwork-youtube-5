@@ -1,3 +1,5 @@
+@import ./vars
+
 *
  margin: 0
  padding: 0
@@ -20,9 +22,32 @@ li
 .main__body
  min-height: 100vh
  font-size: 1.4rem
-
  &.locked
   overflow: hidden
+
+// Rounded Button
+.nav-btn
+ padding: 1.2rem 2.4rem
+ border-radius: 2.4rem
+ font-size: 1.8rem
+ line-height: 1.6
+ background: #FFF0EC
+ color: $secondaryDark
+ transition: 0.3s all
+ &:hover
+  background: $secondaryDark
+  color: #fff
+
+// Custom Select Field
+select
+  &.select
+    width: 4rem
+    font-weight: 700
+    font-size: 1.6rem
+    line-height: 3rem
+    border: none
+    appearance: none
+    background: url("../img/arrow_down.svg") right center no-repeat
 
 @keyframes fade
  0%
