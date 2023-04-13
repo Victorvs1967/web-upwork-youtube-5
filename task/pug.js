@@ -4,6 +4,7 @@ import notify from 'gulp-notify';
 import pugs from 'gulp-pug';
 import webpHtml from 'gulp-webp-html';
 import gulpif from 'gulp-if';
+import replace from 'gulp-replace';
 
 import { src, dest } from '../gulpfile.js';
 import path from '../config/path.js';
@@ -20,6 +21,7 @@ const pug = () =>
     }))
     // PUG processing
     .pipe(pugs(app.pug))
+    .pipe(replace(/@img\//g, './img/'))
     .pipe(gulpif(app.isProd, webpHtml()))
     .pipe(dest(path.pug.dest));
 

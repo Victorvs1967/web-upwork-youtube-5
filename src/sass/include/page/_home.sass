@@ -1,13 +1,14 @@
-@import ./vars
+@import ../vars
 
 .main__wrapper
+  margin-top: 6rem
   margin-bottom: 28rem
   position: relative
   display: flex
+  justify-content: space-between
   align-items: center
   .side__left
     max-width: 41.2rem
-    margin-top: 17.8rem
     .main__title
       font-weight: 700
       font-size: 6rem
@@ -63,6 +64,9 @@
       display: flex
       gap: 3.8rem
   .side__right
-    position: absolute
-    top: 6rem
-    right: -4rem
+    position: relative
+    overflow: visible
+    .pages-images
+      position: absolute
+      top: 4rem
+      left: 0

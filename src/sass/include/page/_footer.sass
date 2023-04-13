@@ -1,0 +1,48 @@
+@import ../vars
+
+.footer
+  height: 44rem
+  background: #3B434F
+  &_wrapper.container
+    padding-bottom: 12rem
+    display: flex
+    justify-content: space-between
+    align-items: start
+  &__icons
+    margin-top: 7rem
+    &_socials
+      margin-top: 6rem
+      display: flex
+      gap: 3rem
+      .social-link
+        transform: .5s opacity
+        &:hover
+          opacity: .7
+      .social_icon
+        width: 3rem
+        height: 3rem
+        fill: white
+  &__nav
+    margin-top: 7rem
+    width: 60%
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    &_menu
+      display: flex
+      flex-direction: column
+      gap: 3.2rem
+      &-item
+        font-weight: 500
+        font-size: 1.8rem
+        line-height: 2.7remoring
+        color: #FFFFFF
+        transform: .5s opacity
+        &:hover
+          opacity: .7
+  &__text
+    &-content
+      font-size: 1.8rem
+      line-height: 2.7rem
+      text-align: center
+      color: #FFFFFF
+      opacity: 0.5

@@ -5,6 +5,7 @@ import rename from 'gulp-rename';
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import webpCss from 'gulp-webp-css';
+import replace from 'gulp-replace';
 
 import { src, dest } from '../gulpfile.js';
 import path from "../config/path.js";
@@ -24,6 +25,7 @@ const styles = () =>
     .pipe(webpCss())
     .pipe(autoprefixer())
     .pipe(rename(app.rename))
-  .pipe(dest(path.sass.dest, { sourcemaps: app.isDev }));
+    .pipe(replace(/@img\//g, '../img/'))
+    .pipe(dest(path.sass.dest, { sourcemaps: app.isDev }));
 
 export default styles;

@@ -26,6 +26,7 @@ const path = {
   },
   img: {
     src: src.concat('/img/*.{png,jpg,jpeg,gif,svg}'),
+    icons: src.concat('/icons/*.svg'),
     watch: src.concat('/img/**/*.{png,jpg,jpeg,gif,svg}'),
     dest: dest.concat('/img/'),
   },

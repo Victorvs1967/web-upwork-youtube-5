@@ -5,6 +5,7 @@ import fileinclude from 'gulp-file-include';
 import htmlmin from 'gulp-htmlmin';
 import size from 'gulp-size';
 import webpHtml from 'gulp-webp-html';
+import replace from 'gulp-replace';
 
 import { src, dest } from '../gulpfile.js';
 import path from '../config/path.js';
@@ -21,6 +22,7 @@ const html = () =>
     }))
     // include - template processing
     .pipe(fileinclude())
+    .pipe(replace(/@img\//g, './img/'))
     .pipe(htmlmin(app.htmlmin))
     // Files size
     .pipe(size({ title: "Before compressed" }))

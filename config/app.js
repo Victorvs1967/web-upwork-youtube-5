@@ -30,6 +30,14 @@ const app = {
   fonter:{
     formats: ["ttf"],
   },
+  svg: {
+    mode: {
+      stack: {
+        sprite: '../icons/icons.svg',
+        example: true,
+      },
+    },
+  },
 };
 
 export default app;

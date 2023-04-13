@@ -1,3 +1,33 @@
-footer
-  .container
-    p.footer-text S SRL - VAT BE0729.842.450 - contact@s.io - Avenue Armand Huysmans 157,1050 Bruxelies
+include ./_mixins
+
+footer.footer
+  .footer_wrapper.container
+    .footer__icons
+      img(src="./img/logo-light.svg", alt="logo").footer__logo
+      .footer__icons_socials
+        a(href="#!").social-link
+          +svg-icon('facebook', 'social_icon')
+        a(href="#!").social-link
+          +svg-icon('instagram', 'social_icon')
+        a(href="#!").social-link
+          +svg-icon('linkedin', 'social_icon')
+    .footer__nav
+      ul.footer__nav_menu
+        li
+          a(href="#!").footer__nav_menu-item About us
+        li
+          a(href="#!").footer__nav_menu-item Blog
+      ul.footer__nav_menu
+        li
+          a(href="#!").footer__nav_menu-item Legal
+        li
+          a(href="#!").footer__nav_menu-item Privacy Policy
+        li
+          a(href="#!").footer__nav_menu-item Terms and conditions
+      ul.footer__nav_menu
+        li
+          a(href="#!").footer__nav_menu-item Help
+        li
+          a(href="#!").footer__nav_menu-item Contact us
+  .footer__text.container
+    p.footer__text-content S SRL - VAT BE0729.842.450 - contact@s.io - Avenue Armand Huysmans 157,1050 Bruxelies

@@ -10,7 +10,7 @@ import path from '../config/path.js';
 import app from '../config/app.js';
 
 const image = () =>
-  src(path.img.src)
+  src([path.img.src, path.img.icons])
     .pipe(plumber({
       errorHandler: notify.onError(error => ({
         title: "Image",

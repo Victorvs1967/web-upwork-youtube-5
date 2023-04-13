@@ -2,6 +2,7 @@ import plumber from 'gulp-plumber';
 import notify from 'gulp-notify';
 import babel from 'gulp-babel';
 import webpack from 'webpack-stream';
+import replace from 'gulp-replace';
 
 import { src, dest } from '../gulpfile.js';
 import app from '../config/app.js'
@@ -16,6 +17,7 @@ const scripts = () =>
       })),
     }))
     .pipe(babel())
+    .pipe(replace(/@img\//g, '../img/'))
     .pipe(webpack(app.webpack))
     .pipe(dest(path.js.dest, { sourcemaps: app.isDev }));
 
