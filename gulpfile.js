@@ -20,7 +20,6 @@ const watcher = () => {
   watch(path.sass.watch, styles).on('all', browsersync.reload);
   watch(path.js.watch, scripts).on('all', browsersync.reload);
   watch(path.img.watch, image).on('all', browsersync.reload);
-  watch(path.font.watch, font).on('all', browsersync.reload);
 };
 
 const server = () =>
@@ -39,7 +38,7 @@ export const build = series(
 );
 
 export const dev = series(
-  build, 
+  build,
   parallel(watcher, server)
 );
 

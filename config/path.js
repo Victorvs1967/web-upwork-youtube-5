@@ -17,22 +17,22 @@ const path = {
   sass: {
     src: src.concat('/sass/*.sass'),
     watch: src.concat('/sass/**/*.sass'),
-    dest: dest.concat('/css'),
+    dest: dest.concat('/css/'),
   },
   js: {
     src: src.concat('/scripts/*.js'),
     watch: src.concat('/scripts/**/*.js'),
-    dest: dest.concat('/js'),
+    dest: dest.concat('/js/'),
   },
   img: {
     src: src.concat('/img/*.{png,jpg,jpeg,gif,svg}'),
     watch: src.concat('/img/**/*.{png,jpg,jpeg,gif,svg}'),
-    dest: dest.concat('/img'),
+    dest: dest.concat('/img/'),
   },
   font: {
     src: src.concat('/font/**/*.{ttf,otf,eot,otc,woff,woff2,svg}'),
     watch: src.concat('/font/**/*.{ttf,otf,eot,otc,woff,woff2,svg}'),
-    dest: dest.concat('/font'),
+    dest: dest.concat('/font/'),
   },
 };
 

@@ -1,20 +1,15 @@
-import { readFileSync } from 'fs';
-
 const isProd = process.argv.includes('--production');
 const isDev = !isProd;
 
 const app = {
   isProd: isProd,
   isDev: isDev,
-  htmlmin: { 
-    collapseWhitespace: isProd 
+  htmlmin: {
+    collapseWhitespace: isProd
   },
   pug: {
     doctype: 'html',
     pretty: isDev,
-    data: {
-      news: [ ...JSON.parse(readFileSync('./data/news.json')) ],
-    }
   },
   sass: {
     outputStyle: isProd ? 'compressed' : 'expanded',

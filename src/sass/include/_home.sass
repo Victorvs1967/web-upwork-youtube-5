@@ -1,0 +1,68 @@
+@import ./vars
+
+.main__wrapper
+  margin-bottom: 28rem
+  position: relative
+  display: flex
+  align-items: center
+  .side__left
+    max-width: 41.2rem
+    margin-top: 17.8rem
+    .main__title
+      font-weight: 700
+      font-size: 6rem
+      line-height: 1.1
+      letter-spacing: -0.03em
+      color: #1D2736
+      &.color
+        color: #F0998D
+    &-text
+      margin-top: 1.6rem
+      ont-size: 1.8rem
+      line-height: 1.8
+      color: #677487
+    input[type=text]
+      width: 100%
+      margin-top: 3.2rem
+      margin-bottom: 1.6rem
+      padding: 1.4rem 2.2rem
+      font-size: 1.8rem
+      line-height: 1.8
+      color: #677487
+      border: 1px solid #DFE8FA
+      border-radius: 1.5rem
+      &:hover
+        border: 1px solid $secondaryDark
+    .side__footer
+      display: flex
+      align-items: center
+      gap: 3rem
+      &-text
+        display: flex
+        flex-direction: column
+        font-weight: 700
+        font-size: 15px
+        line-height: 146%
+        color: #BBC0C7
+    .side__rating
+      margin-top: 3.2rem
+      display: flex
+      gap: 2.3rem
+      .stars
+        display: flex
+        gap: .4rem
+        .star
+          width: 2rem
+          height: 2rem
+      &-text
+        font-size: 1.5rem
+        line-height: 1.8
+        color: #677487
+    .side__logos
+      margin-top: 1.7rem
+      display: flex
+      gap: 3.8rem
+  .side__right
+    position: absolute
+    top: 6rem
+    right: -4rem

@@ -1,0 +1,41 @@
+include ./_mixins
+
+main
+  .container
+    .main__wrapper
+      .side__left
+        h1.main__title your agency.
+        h1.main__title.color in a box.
+
+        p.side__left-text All of your work in one place. And much more
+
+        input(type="text", placeholder="Enter your email address").signup-field
+
+        .side__footer
+          button.main-btn Sign up
+          p.side__footer-text
+            span AND BE PART OF
+            span THE CLOSED BETA
+        .side__rating
+          ul.stars
+            li.star
+              img.star-icon(src="./img/star.svg", alt="star")
+            li.star
+              img.star-icon(src="./img/star.svg", alt="star")
+            li.star
+              img.star-icon(src="./img/star.svg", alt="star")
+            li.star
+              img.star-icon(src="./img/star.svg", alt="star")
+            li.star
+              img.star-icon(src="./img/star.svg", alt="star")
+          span.side__rating-text Based on 100+ marketers reviews on
+        ul.side__logos
+          li.logo
+            img(src="./img/logo-grow.png", alt="grow")
+          li.logo
+            img(src="./img/logo-trust.svg", alt="trust")
+          li.logo
+            img(src="./img/logo-capterra.svg", alt="capterra")
+      .side__right
+        .images
+          img(src="./img/main-background.svg", alt="background").backgroung-img

@@ -3,27 +3,56 @@
 *
  margin: 0
  padding: 0
+ border: 0
+
+*,
+*:before,
+*:after
  box-sizing: border-box
 
 html,
 body
- font-family: "Poppins", sans-serif
+ font-family: $fontMain
  font-size: 10px
  line-height: 1.6
 
-a
- text-decoration: none
- color: #262626
-
-ul,
-li
- list-style: none
-
-.main__body
+body
  min-height: 100vh
  font-size: 1.4rem
  &.locked
   overflow: hidden
+
+aside,
+nav,
+header,
+footer,
+section
+  display: block
+
+button
+  cursor: pointer
+  padding: 2.0rem 4.5rem
+  width: 14.5rem
+  height: 6rem
+  background: $secondary
+  box-shadow: 0px 1.6rem 4rem rgba(255, 188, 166, 0.33)
+  border-radius: 1.5rem
+  font-weight: 700
+  font-size: 1.8rem
+  line-height: 2.7rem
+  color: #FFFFFF
+  &:hover
+    background: $secondaryDark
+  &::-moz-focus-inner
+    padding: 0
+    border: 0
+a,
+a:visited,
+a:hover
+ text-decoration: none
+
+ul li
+ list-style: none
 
 // Rounded Button
 .nav-btn
@@ -48,6 +77,16 @@ select
     border: none
     appearance: none
     background: url("../img/arrow_down.svg") right center no-repeat
+
+// Container
+.container
+  max-width: $containerWidth + px
+  width: 100%
+  margin: 0 auto
+  padding: 0 $containerSidePadding + px
+
+.main-btn
+  padding: 1rem 2rem
 
 @keyframes fade
  0%

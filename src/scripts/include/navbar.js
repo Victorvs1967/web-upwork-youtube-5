@@ -13,7 +13,7 @@ export const burgerMenu = () => {
     } else {
       menu.classList.remove('active');
       burger.classList.remove('active-burger');
-      body.classList.remove('locked');      
+      body.classList.remove('locked');
     }
   });
   // Navbar Breakpoint
@@ -21,8 +21,8 @@ export const burgerMenu = () => {
     if (window.innerWidth > 991.98) {
       menu.classList.remove('active');
       burger.classList.remove('active-burger');
-      body.classList.remove('locked');      
-      navBtns.classList.remove('active');      
+      body.classList.remove('locked');
+      navBtns.classList.remove('active');
     } else {
       menu.classList.add('active');
       burger.classList.add('active-burger');

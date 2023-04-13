@@ -21,7 +21,6 @@ const image = () =>
     .pipe(webp())
     .pipe(dest(path.img.dest))
     .pipe(src(path.img.src))
-    .pipe(newer(path.img.dest))
     .pipe(gulpif(app.isProd, imagemin(app.imagemin)))
     .pipe(dest(path.img.dest));
 
